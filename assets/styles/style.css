@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b2f;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+    color: white;
+    background-color: #1b1b2f;
+}
+
+header {
+    display: inline;
+}
+
+h2,
+h3 {
+    color: white
+}
+
+nav {
+    background-color: #1b1b2f;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #f1f1e8;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+aside {
+    /* float: right; */
+    /* width: 25%; */
+    /* padding-left: 20px; */
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+article.box {
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #1f4068;
+    color: #eeeeee;
+    text-align: center;
+}
+
+main.flex-container {
+    display: flex;
+    border: inherit;
+    background-color: inherit;
+    flex-direction: column;
+    /* properti pendukung */
+    max-width: 1600px;
+    margin: 35px auto;
+    text-align: right;
+}
+
+.flex-container {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    background-color: #1f4068;
+    /* properti pendukung */
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.box {
+    /* border: 2px solid black; */
+    /* properti lainnya */
+    /* background-color: #FBDD1C; */
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.triple {
+
+    flex-basis: 80%;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 30px;
+    background-color: #162447;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 300px;
+    border-radius: 75%;
+    height: auto;
+}
+
+footer {
+    padding: 5px;
+    color: white;
+
+    background-color: #e43f5a;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
