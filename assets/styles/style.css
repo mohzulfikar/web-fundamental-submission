@@ -74,20 +74,28 @@ main.flex-container {
     display: flex;
     border: inherit;
     background-color: inherit;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* properti pendukung */
     max-width: 1600px;
-    margin: 35px auto;
     text-align: right;
 }
 
 .flex-container {
     display: flex;
     border: 2px solid black;
-    flex-direction: row;
     background-color: #1f4068;
     /* properti pendukung */
     max-width: 1500px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+
+    /* properti pendukung */
+    max-width: 800px;
     margin: 0 auto;
     text-align: right;
 }
