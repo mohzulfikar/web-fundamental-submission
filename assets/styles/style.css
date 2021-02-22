@@ -90,14 +90,32 @@ main.flex-container {
     text-align: right;
 }
 
+.no-flex {
+    flex: 0 0 100%;
+}
+
 .flex-container-column {
     display: flex;
     flex-direction: column;
 
     /* properti pendukung */
-    max-width: 800px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     text-align: right;
+}
+
+.flex-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: auto;
+    align-content: start
+}
+
+.section-item {
+    flex: 0 0 auto;
+    margin: 24px;
 }
 
 .box {
@@ -140,7 +158,7 @@ main.flex-container {
 }
 
 .profile img {
-    width: 300px;
+    width: 250px;
     border-radius: 75%;
     height: auto;
 }
