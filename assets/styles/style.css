@@ -104,20 +104,6 @@ main.flex-container {
     text-align: right;
 }
 
-.flex-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: start;
-    align-items: auto;
-    align-content: start
-}
-
-.section-item {
-    flex: 0 0 auto;
-    margin: 24px;
-}
-
 .box {
     /* border: 2px solid black; */
     /* properti lainnya */
@@ -163,6 +149,36 @@ main.flex-container {
     height: auto;
 }
 
+.flex-section {
+    display: flex;
+    border: 1px solid greenyellow;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: start; */
+    /* align-items: auto; */
+    /* align-content: start; */
+}
+
+.section-item {
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding: 10px;
+    /* flex: 1 0 auto; */
+    /* margin: 10px; */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .section-item {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-item {
+        flex-basis: 100%;
+    }
+}
+
 footer {
     padding: 5px;
     color: white;
@@ -172,7 +188,20 @@ footer {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1024px) {
+    .flex-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        align-items: auto;
+        align-content: start;
+    }
+
+    .section-item {
+        flex: 1 0 auto;
+        margin: 24px;
+    }
 
     #content,
     aside {
@@ -180,3 +209,26 @@ footer {
         padding: 0;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .flex-section {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        align-items: auto;
+        align-content: start;
+    }
+
+    .section-item {
+        flex: 1;
+        margin: 24px;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+} */
