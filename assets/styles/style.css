@@ -189,6 +189,10 @@ main.flex-container {
         flex-direction: column;
     }
 
+    .flex-container-column {
+        margin: 0 0;
+    }
+
     .triple {
         flex-basis: 100%;
     }
@@ -205,7 +209,7 @@ main.flex-container {
     }
 
     .logo img {
-        width: 250px;
+        width: 75%;
     }
 
     .jumbotron .flex-container {
@@ -218,15 +222,38 @@ main.flex-container {
         text-align: center;
     }
 
+    nav {
+        min-width: 300px;
+    }
+
+    .jumbotron {
+        min-width: 300px;
+    }
+
     main.flex-container {
         flex-direction: column;
         min-width: 300px;
     }
 
     .profile img {
-        width: 200px;
+        width: 80%;
         border-radius: 75%;
         height: auto;
+        padding: 15px 5px 5px 5px;
+    }
+
+    .profile figcaption {
+        padding: 10px;
+    }
+
+    .jumbotron {
+        font-size: 18px;
+        /* padding: 0; */
+
+    }
+
+    .flex-container-column {
+        margin: 0 0;
     }
 
     .triple {
@@ -235,6 +262,10 @@ main.flex-container {
 
     .section-item {
         flex-basis: 100%;
+    }
+
+    footer {
+        min-width: 300px;
     }
 }
 
