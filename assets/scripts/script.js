@@ -3,24 +3,30 @@ function getLuckyNumber() {
     return luckyNum;
 };
 
+function pad(num, num_length) {
+    var s = "00000" + num;
+    return s.substr(s.length - num_length);
+};
+
+// Setter Lucky Number
 function setLuckyNumberBoxes() {
     luckNum = getLuckyNumber();
     luckNum = luckNum.toString();
-    luckNum = luckNum.padStart(5, "00000");
-    console.log(luckNum);
+    luckNum = pad(luckNum, 5);
     for (let i = 0; i < luckyNumberBoxes.length; i++) {
         luckyNumberBoxes[i].innerHTML = luckNum[i];
     }
-}
+};
 
-const luckyNumberBoxes = document.querySelectorAll("h3.box")
+// Selector elemen lucky number
+const luckyNumberBoxes = document.querySelectorAll("h3.box");
 
+// Inisialisasi nilai lucky number
 window.onload = function() {
-    setLuckyNumberBoxes()
-}
+    setLuckyNumberBoxes();
+};
 
 const reload = document.querySelector("img.fig-item");
-reload.addEventListener('click', function(event) {
-    const target = event.target;
-    setLuckyNumberBoxes()
-})
+reload.addEventListener('click', function() {
+    setLuckyNumberBoxes();
+});
