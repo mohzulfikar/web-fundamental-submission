@@ -77,6 +77,61 @@ main.flex-container {
     border: 1px solid snow;
 }
 
+section.flex-container {
+    flex-grow: 1;
+    flex-basis: 20%;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid orange;
+    justify-content: center;
+}
+
+section .box {
+    border: 2px solid #1b1b2f;
+    background-color: #162447;
+    flex-basis: 15%;
+    padding: 10px;
+}
+
+.box h2 {
+    padding-top: 15px;
+}
+
+section .box:last-child {
+    position: relative;
+    flex-basis: 75%;
+}
+
+figure.flex-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: auto;
+    align-content: center;
+    margin: 3px;
+    padding: 5px;
+}
+
+figure.flex-container figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 75%;
+    font-weight: bold;
+}
+
+img.fig-item {
+    border: 2px solid #162447;
+    flex-basis: 15%;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.fig-item {
+    /* border: 1px solid red; */
+    flex-basis: 50%;
+}
+
 .favicon img {
     width: 17px;
     margin-left: 50px;
@@ -112,6 +167,7 @@ main.flex-container {
     margin: 0 auto;
     text-align: right;
 }
+
 
 .box {
     /* border: 2px solid black; */
@@ -277,48 +333,3 @@ footer {
     text-align: center;
     font-weight: bold;
 }
-
-/* @media screen and (max-width: 1024px) {
-    .flex-section {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: start;
-        align-items: auto;
-        align-content: start;
-    }
-
-    .section-item {
-        flex: 1 0 auto;
-        margin: 24px;
-    }
-
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .flex-section {
-        display: inline-block;
-        position: relative;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: start;
-        align-items: auto;
-        align-content: start;
-    }
-
-    .section-item {
-        flex: 1;
-        margin: 24px;
-    }
-
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
-    }
-} */
